@@ -1,0 +1,27 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "A todo list backend built in Node.js, MongoDB, and Mongoose",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanblazev/KIII_proekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milanblazev/KIII_proekt/issues"
+  },
+  "homepage": "https://github.com/milanblazev/KIII_proekt#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
