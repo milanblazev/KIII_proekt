@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-list-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-list-app
+  template:
+    metadata:
+      labels:
+        app: todo-list-app
+    spec:
+      containers:
+      - name: todo-list-app
+        image: milan1003/todo-list-app:latest  # Замени со твојот DockerHub репозиториум
+        ports:
+        - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred

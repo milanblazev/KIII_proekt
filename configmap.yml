@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-app-config
+data:
+  DB_HOST: "mongo-service"  # Пример за конфигурација на базата
+  DB_PORT: "27017"

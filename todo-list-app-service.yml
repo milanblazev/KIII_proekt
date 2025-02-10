@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todo-list-app
+spec:
+  selector:
+    app: todo-list-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000  # Порти можат да се разликуваат, внимавај на овие порти
